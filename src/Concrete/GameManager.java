@@ -3,8 +3,10 @@ package Concrete;
 import Abstract.GameService;
 import Entity.Game;
 import Entity.Player;
+import Service.PlayerCheckService;
 
 public class GameManager implements GameService{
+	
 
 	@Override
 	public void add(Game game) {

@@ -7,6 +7,7 @@ import Concrete.PlayerManager;
 import Entity.Campaign;
 import Entity.Entity;
 import Entity.Player;
+import Service.MernisServiceAdapter;
 import Entity.Game;
 
 
@@ -22,7 +23,7 @@ public class Main {
 		Campaign campaign1 = new Campaign(1,"Yýlbaþý",20);
 		
 		GameManager gameManager=new GameManager();
-		PlayerManager playerManager=new PlayerManager();
+		PlayerManager playerManager=new PlayerManager(new MernisServiceAdapter());
 		CampaignManager campaignManager=new CampaignManager();
 		
 		playerManager.add(player1);
